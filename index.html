@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .typed-cursor {
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="text">I am a <span id="element" style="color:white"></span> developer</h1>
+    </div>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        // https://github.com/mattboldt/typed.js/
+        var typed = new Typed('#element', {
+          strings: ['Frontend', 'WordPress'],
+          typeSpeed: 150,
+          backSpeed: 150,
+          loop:true,
+          showCursor: true,
+            cursorChar: '|',
+            autoInsertCss: true,
+        });
+    </script>
+</body>
+</html>
